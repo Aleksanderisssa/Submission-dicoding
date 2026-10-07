@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexander Isa — Front-End Web Developer</title>
+  <meta name="description" content="Halaman personal Alexander Isa, pembelajar front-end web development di Dicoding.">
+  <meta name="theme-color" content="#0a0506">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten</a>
+
+  <header class="site-header" id="atas">
+    <nav class="site-nav" aria-label="Navigasi utama">
+      <div class="site-nav__inner">
+        <a class="site-nav__brand" href="#atas">Alexander Isa</a>
+        <ul class="site-nav__links">
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#proyek">Proyek</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+          <li><a href="https://www.dicoding.com/users/aleksander_isa5ug4/academies" target="_blank" rel="noopener noreferrer">Dicoding <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+      <div class="progress" aria-hidden="true"><span></span></div>
+    </nav>
+
+    <div class="hero">
+      <figure class="hero__photo">
+        <img src="images/profile.webp" alt="Foto profil Alexander Isa" width="864" height="1184" fetchpriority="high">
+      </figure>
+
+      <div class="hero__content">
+        <p class="hero__role">Front-End Web Developer</p>
+        <h1 class="hero__name">
+          <span class="line">Alexander</span>
+          <span class="line line--2">Isa</span>
+        </h1>
+        <div class="hero__foot">
+          <p class="hero__intro">
+            Lagi belajar bikin web yang rapi, mudah dipakai, dan nyaman di layar apa pun.
+          </p>
+          <div class="hero__cta">
+            <a class="btn" href="#kontak">Hubungi saya</a>
+            <a class="link-arrow" href="#proyek">Lihat proyek <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-layout" id="konten">
+    <main>
+      <article id="tentang" class="chapter reveal">
+        <h2>Tentang</h2>
+        <p class="lede">
+          Saya Alexander. Saya sedang menekuni dasar-dasar HTML, CSS, dan
+          JavaScript lewat kelas-kelas di Dicoding.
+        </p>
+        <p>
+          Yang saya kejar: antarmuka yang rapi, bisa dipakai siapa saja, dan
+          tetap enak dilihat di berbagai ukuran layar. Halaman ini saya tulis
+          sendiri tanpa framework.
+        </p>
+
+        <ul class="skills">
+          <li class="skill">
+            <h3 class="skill__name">HTML semantik</h3>
+            <p class="skill__note">header, nav, main, article, aside, footer. Setiap tag dipakai sesuai fungsinya.</p>
+          </li>
+          <li class="skill">
+            <h3 class="skill__name">CSS</h3>
+            <p class="skill__note">Flexbox dan media query supaya tata letak ikut menyesuaikan layar.</p>
+          </li>
+          <li class="skill">
+            <h3 class="skill__name">JavaScript dasar</h3>
+            <p class="skill__note">Nama di atas yang bereaksi ke kursor dan tombol salin email di bawah saya tulis sendiri.</p>
+          </li>
+          <li class="skill">
+            <h3 class="skill__name">Git &amp; GitHub</h3>
+            <p class="skill__note">Menyimpan riwayat perubahan dan berbagi kode.</p>
+          </li>
+        </ul>
+      </article>
+
+      <article id="proyek" class="chapter reveal">
+        <h2>Proyek</h2>
+        <section class="project">
+          <ul class="project__status">
+            <li>Sedang dikembangkan</li>
+            <li>Kompetisi inovasi</li>
+          </ul>
+          <h3>Ruang Pulih</h3>
+          <p>
+            Gagasan produk digital untuk mendukung kesehatan mental, yang sedang
+            saya kembangkan sebagai bagian dari kompetisi inovasi.
+          </p>
+        </section>
+      </article>
+
+      <article id="kontak" class="chapter reveal">
+        <h2>Kontak</h2>
+        <p>Silakan hubungi saya lewat email untuk diskusi lebih lanjut.</p>
+        <div class="contact">
+          <a class="contact__mail" href="mailto:aleksander290608@gmail.com">aleksander290608@gmail.com</a>
+          <button type="button" class="btn btn--ghost js-only" id="copy-email" data-email="aleksander290608@gmail.com">Salin alamat</button>
+        </div>
+        <p class="contact__alt">
+          Perkembangan belajar saya bisa dilihat di
+          <a href="https://www.dicoding.com/users/aleksander_isa5ug4/academies" target="_blank" rel="noopener noreferrer">profil Dicoding</a>.
+        </p>
+      </article>
+    </main>
+
+    <aside class="profile reveal">
+      <h2>Biodata</h2>
+      <dl class="bio-list">
+        <div>
+          <dt>Nama</dt>
+          <dd>Alexander Isa</dd>
+        </div>
+        <div>
+          <dt>Peran</dt>
+          <dd>Front-End Web Developer (Pemula)</dd>
+        </div>
+        <div>
+          <dt>Fokus belajar</dt>
+          <dd>Pengembangan web dasar</dd>
+        </div>
+        <div>
+          <dt>Platform belajar</dt>
+          <dd>Dicoding</dd>
+        </div>
+      </dl>
+      <a class="btn btn--ghost profile__link" href="https://www.dicoding.com/users/aleksander_isa5ug4/academies" target="_blank" rel="noopener noreferrer">Profil Dicoding <span aria-hidden="true">↗</span></a>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; 2026 Alexander Isa. Dibuat untuk submission kelas Dicoding.</p>
+      <a href="#atas" class="to-top">Kembali ke atas <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
